@@ -1,4 +1,4 @@
-
+const asyncHandler = require("express-async-handler");
 //@route GET /api/contacts
 const getContacts = asyncHandler(async (req,res) => {
     res.status(200).json({ message: "Get all contacts" })
